@@ -13,7 +13,7 @@ residual the core does not already explain. All backbones (BI-Mamba, LSTM, GRU, 
 TSMixer-style, a windowed MLP, xLSTM/sLSTM-style, iTransformer-style) are evaluated in this same
 hybrid harness and are additionally parameter-matched to BI-Mamba via binary search over their
 width, so that comparisons across correctors are not confounded by capacity.
-
+ 
 ## Reproduction map
 
 All notebooks share an identical foundational setup (cells "0 — Setup" through "5 — Train ·
