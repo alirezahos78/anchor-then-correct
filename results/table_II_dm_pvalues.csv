@@ -1,0 +1,16 @@
+index,A,B,DM_QLIKE,p_QLIKE,verdict
+DJI,Hybrid (BI-Mamba),persistence (RW),-1.89,0.0599,n.s.
+DJI,Hybrid (BI-Mamba),"GARCH(1,1)",-2.07,0.0386,A better
+DJI,Hybrid (BI-Mamba),HAR-RV,-2.57,0.0105,A better
+DJI,Hybrid (BI-Mamba),VIX-only,-0.9,0.3702,n.s.
+DJI,Hybrid (BI-Mamba),core OLS (full),-1.55,0.1224,n.s.
+IXIC,Hybrid (BI-Mamba),persistence (RW),-2.89,0.004,A better
+IXIC,Hybrid (BI-Mamba),"GARCH(1,1)",-0.97,0.3315,n.s.
+IXIC,Hybrid (BI-Mamba),HAR-RV,-2.24,0.0252,A better
+IXIC,Hybrid (BI-Mamba),VIX-only,-2.72,0.0068,A better
+IXIC,Hybrid (BI-Mamba),core OLS (full),-2.66,0.008,A better
+NYA,Hybrid (BI-Mamba),persistence (RW),-4.28,0.0,A better
+NYA,Hybrid (BI-Mamba),"GARCH(1,1)",-2.98,0.003,A better
+NYA,Hybrid (BI-Mamba),HAR-RV,-2.32,0.0206,A better
+NYA,Hybrid (BI-Mamba),VIX-only,0.62,0.5368,n.s.
+NYA,Hybrid (BI-Mamba),core OLS (full),-1.17,0.2438,n.s.

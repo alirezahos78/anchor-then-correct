@@ -1,0 +1,25 @@
+A,B,index,p_QLIKE,significant_0.05
+Hybrid (BI-Mamba),Hybrid (LSTM),DJI,0.5785,False
+Hybrid (BI-Mamba),Hybrid (LSTM),IXIC,0.3087,False
+Hybrid (BI-Mamba),Hybrid (LSTM),NYA,0.5049,False
+Hybrid (BI-Mamba),Hybrid (GRU),DJI,0.3653,False
+Hybrid (BI-Mamba),Hybrid (GRU),IXIC,0.6958,False
+Hybrid (BI-Mamba),Hybrid (GRU),NYA,0.4303,False
+Hybrid (BI-Mamba),Hybrid (PatchTF),DJI,0.2382,False
+Hybrid (BI-Mamba),Hybrid (PatchTF),IXIC,0.6204,False
+Hybrid (BI-Mamba),Hybrid (PatchTF),NYA,0.8609,False
+Hybrid (BI-Mamba),Hybrid (TSMixer),DJI,0.3704,False
+Hybrid (BI-Mamba),Hybrid (TSMixer),IXIC,0.278,False
+Hybrid (BI-Mamba),Hybrid (TSMixer),NYA,0.1282,False
+Hybrid (BI-Mamba),Hybrid (MLP),DJI,0.1375,False
+Hybrid (BI-Mamba),Hybrid (MLP),IXIC,0.4421,False
+Hybrid (BI-Mamba),Hybrid (MLP),NYA,0.1521,False
+Hybrid (BI-Mamba),Hybrid (Input-fusion),DJI,0.3301,False
+Hybrid (BI-Mamba),Hybrid (Input-fusion),IXIC,0.1781,False
+Hybrid (BI-Mamba),Hybrid (Input-fusion),NYA,0.0969,False
+Hybrid (BI-Mamba),Hybrid (xLSTM),DJI,0.5446,False
+Hybrid (BI-Mamba),Hybrid (xLSTM),IXIC,0.277,False
+Hybrid (BI-Mamba),Hybrid (xLSTM),NYA,0.2997,False
+Hybrid (BI-Mamba),Hybrid (iTransformer),DJI,0.1386,False
+Hybrid (BI-Mamba),Hybrid (iTransformer),IXIC,0.006,True
+Hybrid (BI-Mamba),Hybrid (iTransformer),NYA,0.1728,False

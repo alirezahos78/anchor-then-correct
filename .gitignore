@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Generated data (regenerate with data/build_vol_dataset.py)
+vol_dataset/
+*_vol.csv
+
+# Checkpoints / large artifacts
+*.pt
+*.pth
+*.ckpt
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

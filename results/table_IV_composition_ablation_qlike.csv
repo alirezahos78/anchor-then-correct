@@ -1,0 +1,31 @@
+row,index,QLIKE_ensemble
+Hybrid (BI-Mamba),DJI,0.3995
+Hybrid (BI-Mamba),IXIC,0.3965
+Hybrid (BI-Mamba),NYA,0.4017
+Hybrid (LSTM),DJI,0.4079
+Hybrid (LSTM),IXIC,0.4104
+Hybrid (LSTM),NYA,0.4038
+Hybrid (GRU),DJI,0.4196
+Hybrid (GRU),IXIC,0.3933
+Hybrid (GRU),NYA,0.4046
+Hybrid (PatchTF),DJI,0.4266
+Hybrid (PatchTF),IXIC,0.4036
+Hybrid (PatchTF),NYA,0.4031
+Hybrid (TSMixer),DJI,0.4277
+Hybrid (TSMixer),IXIC,0.412
+Hybrid (TSMixer),NYA,0.4227
+Hybrid (MLP),DJI,0.4113
+Hybrid (MLP),IXIC,0.4092
+Hybrid (MLP),NYA,0.437
+Hybrid (Input-fusion),DJI,0.4455
+Hybrid (Input-fusion),IXIC,0.4537
+Hybrid (Input-fusion),NYA,0.4736
+Hybrid (xLSTM),DJI,0.4087
+Hybrid (xLSTM),IXIC,0.4136
+Hybrid (xLSTM),NYA,0.4105
+Hybrid (iTransformer),DJI,0.462
+Hybrid (iTransformer),IXIC,0.5553
+Hybrid (iTransformer),NYA,0.4421
+core OLS (full),DJI,0.4917
+core OLS (full),IXIC,0.6092
+core OLS (full),NYA,0.4378
