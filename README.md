@@ -7,7 +7,7 @@ Research code for **Anchor, Then Correct: Backbone-Robust Deep Learning for Mult
 The experiments compare direct sequence prediction with a frozen statistical core plus a learned residual. Paired runs share encoder inputs, trainable initialization, training budgets, and validation checkpoint selection. The residual formulation adds the fitted conditional core path.
 
 ## Quick start
-
+ 
 Use your existing Python environment. From the repository root:
 
 ```bash
