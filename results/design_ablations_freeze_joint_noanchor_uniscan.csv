@@ -1,6 +1,0 @@
-config,QLIKE_ensemble,index
-Hybrid (BI-Mamba, frozen),0.3965,IXIC
-Hybrid (joint core),0.4000,IXIC
-Hybrid (no-anchor),0.4227,IXIC
-Hybrid (uni-scan, matched),0.4127,IXIC
-core OLS (full),0.6092,IXIC

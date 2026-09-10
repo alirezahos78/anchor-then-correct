@@ -1,7 +1,0 @@
-row,index,QLIKE,R2,p_vs_VIX-only
-PatchTF (raw),DJI,0.6507,-0.0154,0.1033
-PatchTF (raw),IXIC,0.6438,0.0663,0.833
-PatchTF (raw),NYA,0.806,-0.1183,0.0633
-TSMixer (raw),DJI,0.4559,0.1814,0.7612
-TSMixer (raw),IXIC,0.4871,0.2058,0.012
-TSMixer (raw),NYA,0.5248,0.1725,0.1772

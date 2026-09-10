@@ -1,4 +1,0 @@
-A,B,index,DM_QLIKE,p_QLIKE,DM_SE,p_SE,note
-Hybrid (BI-Mamba, frozen),Hybrid (joint core),IXIC,-0.63,0.5308,0.27,0.7907,freeze vs joint: equivalent
-Hybrid (BI-Mamba, frozen),Hybrid (no-anchor),IXIC,-0.86,0.3925,1.41,0.1584,no-anchor does not significantly collapse vs default
-Hybrid (BI-Mamba, frozen),Hybrid (uni-scan, matched),IXIC,-1.04,0.2984,2.27,0.0238,"SE significant in uni-scan's favor -- reverses the unmatched pre-purge result (param-matched d_model=55 vs 32, see notebook)"

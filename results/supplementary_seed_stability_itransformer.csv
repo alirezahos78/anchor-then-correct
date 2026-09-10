@@ -1,4 +1,0 @@
-seed_set,iTransformer_QLIKE,Hybrid(BI-Mamba)_QLIKE,gap,p,index
-"{1,2,3} (original)",0.5553,0.3965,0.1588,0.006,IXIC
-"{4,5,6} (fresh)",0.528,0.404,0.124,0.0019,IXIC
-{1..6} (pooled),0.5399,0.3995,0.1404,0.0036,IXIC

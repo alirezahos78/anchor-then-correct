@@ -1,5 +1,0 @@
-row,QLIKE,note
-VIX-only,0.6613,"same as Table I VIX-only, IXIC"
-VXN-only,0.5626,
-Hybrid (VIX core),0.3965,"same as Table I Hybrid(BI-Mamba), IXIC"
-Hybrid (VXN core),0.4246,
