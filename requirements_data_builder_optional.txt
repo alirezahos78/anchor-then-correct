@@ -1,0 +1,3 @@
+# Needed for automatic data creation when no valid local dataset exists.
+# The runner checks the active environment and does not install packages.
+yfinance==1.4.1

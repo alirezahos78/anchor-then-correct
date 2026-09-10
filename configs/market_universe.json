@@ -1,0 +1,29 @@
+{
+  "start_inclusive": "2010-01-01",
+  "end_exclusive": "2026-08-17",
+  "requested_cutoff_inclusive": "2026-08-16",
+  "reference_anchor": {"name": "VIX_REFERENCE", "ticker": "^VIX"},
+  "shared_exogenous": {"TNX": "^TNX"},
+  "spillover_benchmarks": {
+    "DJI": "^DJI",
+    "IXIC": "^IXIC",
+    "NYA": "^NYA"
+  },
+  "markets": [
+    {"name": "DJI",  "ticker": "^DJI",  "anchor_name": "VIX",   "anchor_ticker": "^VIX",   "role": "discovery",    "family": "dow"},
+    {"name": "IXIC", "ticker": "^IXIC", "anchor_name": "VIX",   "anchor_ticker": "^VIX",   "role": "discovery",    "family": "nasdaq_composite"},
+    {"name": "NYA",  "ticker": "^NYA",  "anchor_name": "VIX",   "anchor_ticker": "^VIX",   "role": "discovery",    "family": "nyse_composite"},
+
+    {"name": "SPX",  "ticker": "^GSPC", "anchor_name": "VIX",   "anchor_ticker": "^VIX",   "role": "confirmatory", "family": "sp500"},
+    {"name": "NDX",  "ticker": "^NDX",  "anchor_name": "VXN",   "anchor_ticker": "^VXN",   "role": "confirmatory", "family": "nasdaq100"},
+    {"name": "RUT",  "ticker": "^RUT",  "anchor_name": "VIX",   "anchor_ticker": "^VIX",   "role": "confirmatory", "family": "russell2000"},
+    {"name": "DIA",  "ticker": "DIA",   "anchor_name": "VXD",   "anchor_ticker": "^VXD",   "role": "confirmatory", "family": "dow"},
+    {"name": "GLD",  "ticker": "GLD",   "anchor_name": "GVZ",   "anchor_ticker": "^GVZ",   "role": "confirmatory", "family": "gold"},
+    {"name": "USO",  "ticker": "USO",   "anchor_name": "OVX",   "anchor_ticker": "^OVX",   "role": "confirmatory", "family": "oil"},
+    {"name": "EEM",  "ticker": "EEM",   "anchor_name": "VIX",   "anchor_ticker": "^VIX",   "role": "confirmatory", "family": "emerging_markets"},
+
+    {"name": "SPY",  "ticker": "SPY",   "anchor_name": "VIX",   "anchor_ticker": "^VIX",   "role": "robustness",   "family": "sp500"},
+    {"name": "QQQ",  "ticker": "QQQ",   "anchor_name": "VXN",   "anchor_ticker": "^VXN",   "role": "robustness",   "family": "nasdaq100"},
+    {"name": "IWM",  "ticker": "IWM",   "anchor_name": "VIX",   "anchor_ticker": "^VIX",   "role": "robustness",   "family": "russell2000"}
+  ]
+}

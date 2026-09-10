@@ -1,11 +1,7 @@
-# Pinned to the versions this project was developed and verified against.
-# torch: install the CUDA build matching your system from https://pytorch.org/get-started/locally/
-#   if you want GPU acceleration (e.g. `pip install torch==2.9.0 --index-url https://download.pytorch.org/whl/cu128`).
-#   The plain PyPI version below (CPU-only wheel) also works, just slower.
+# Documentation only. The runner never installs or upgrades packages.
 torch==2.9.0
 numpy==2.2.6
 pandas==2.3.3
-arch==8.0.0
 scipy==1.15.3
-matplotlib==3.10.7
-yfinance==1.4.1
+arch==8.0.0
+tqdm>=4.66,<5
