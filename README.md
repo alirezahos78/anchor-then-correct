@@ -1,6 +1,6 @@
 # Anchor, Then Correct
 
-Research code for **Anchor, Then Correct: Backbone-Robust Deep Learning for Multi-Market Volatility Forecasting**.
+Research code for **ANCHOR, THEN CORRECT: MODEL-AGNOSTIC ECONOMETRIC–NEURAL VOLATILITY FORECASTING**.
 
 **Authors:** Alireza Hoseinzade, Ehsan Hoseinzade, and Ali Rajaei.
 
