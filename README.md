@@ -42,12 +42,59 @@ It evaluates the original saved forecasts and exports DM tests with multiplicity
 
 The posthoc command creates a timestamped result folder and ZIP under `posthoc_controls`, next to the supplied training output directory. Run it after the training suite has completed.
 
+## Hybrid baselines
+
+Three published hybrid mechanisms are reimplemented, each keeping its own
+mechanism while sharing this study's horizon, QLIKE objective, window,
+channels, parameter budget, optimizer, epoch budget, seeds, and seed-averaged
+reporting:
+
+| Placement of the econometric forecast | Method | Command |
+| --- | --- | --- |
+| Encoder input | Hybrid LSTM (Kim and Won, 2018) | `run_hybrid_baselines.py` |
+| Training loss | GINN (Xu et al., 2024) | `run_hybrid_baselines.py` |
+| Post-hoc fusion | Stacked GARCH-LSTM (Peter et al., 2026) | `run_stacking_baseline.py` |
+| Output (this work) | Anchor, then correct | `run_matched.py` |
+
+Run after the training suite has completed:
+
+```bash
+python run_hybrid_baselines.py --stage verify   # seconds; checks the GARCH reference path
+python run_hybrid_baselines.py                  # Hybrid LSTM and GINN, 42 trainings
+python run_stacking_baseline.py                 # seconds; reuses saved forecasts
+python run_table1_dm.py                         # DM tests with Holm correction
+```
+
+Defaults reproduce the paper: an LSTM encoder as in the original
+implementations, GINN blend weight `lambda = 0.1`, and a linear stacking
+meta-learner fitted on validation. The zero-initialized readout and the
+epoch-zero checkpoint candidate belong to the anchored design and are not
+given to the baselines. Numbers are reimplementations under a common protocol
+and do not match the original papers, whose targets and objectives differ.
+
+The GINN weight was selected on validation QLIKE. To reproduce the selection:
+
+```bash
+for L in 0.01 0.1 0.3 0.5 0.7; do
+  python run_hybrid_baselines.py --kinds ginn --lam $L --tag lam$L
+done
+```
+
+and compare `ensemble_val_QLIKE` in each `hybrid_baselines_lam*/hybrid_baselines.csv`.
+
+`run_table1_dm.py` complements `run_posthoc_controls.py`: besides the residual
+comparisons, it tests every hybrid baseline and direct learning against GARCH.
+To test a tagged GINN run, pass `--baseline-dir hybrid_baselines_<tag>`.
+
 ## Repository contents
 
 | Path | Purpose |
 |---|---|
 | `run_matched.py` | Main data and training entry point |
 | `run_posthoc_controls.py` | Analysis of saved forecasts, including GARCH DM tests |
+| `run_hybrid_baselines.py` | Input-level and loss-level hybrid baselines |
+| `run_stacking_baseline.py` | Stacking hybrid baseline from saved forecasts |
+| `run_table1_dm.py` | DM tests for hybrid baselines and direct learning versus GARCH |
 | `volatility_pipeline/` | Data processing, models, training, statistics, and reporting |
 | `configs/` | Frozen experiment settings and market definitions |
 | `data/build_market_dataset.py` | Dataset builder |

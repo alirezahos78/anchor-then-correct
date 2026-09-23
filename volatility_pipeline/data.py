@@ -101,6 +101,9 @@ class DataBundle:
     iv_column: str
     corrector_iv_mode: str
     data_path: Path
+    # Fitted on the purged train mask; maps a standardized core channel back
+    # into log-volatility units (used by the loss-level hybrid baseline).
+    core_scaler: Standardizer | None = None
 
     def loaders(self, batch_size: int) -> dict[str, torch.utils.data.DataLoader]:
         return {
@@ -390,6 +393,7 @@ def prepare_data(
         iv_column=iv_column,
         corrector_iv_mode=corrector_iv_mode,
         data_path=Path(cfg.data_dir) / f"{index_name}_vol.csv",
+        core_scaler=core_scaler,
     )
 
 
